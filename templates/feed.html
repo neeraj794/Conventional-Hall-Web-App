@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+    {% block title %}Successful{% endblock %}
+    {% block main1 %}
+        <article class="success">
+            <p>Thankyou for filling out the form</p>
+            <p>
+                {{u_name}},  your details have been submitted successfully.<br>
+                Our administrator will contact you very soon regarding the confirmation.
+            </p>
+            <a href="{{ url_for('homePage')}}">Close</a>
+        </article>
+    {% endblock %}

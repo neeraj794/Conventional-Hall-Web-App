@@ -1,0 +1,54 @@
+/*Mobile First Development*/
+:root{
+    --bg-clr:#fef6e4; --prm-clr:#670d2f; --acc-clr:#d4af7f; --txt-clr:#1f2937;
+}
+html, body{
+    width:100%; margin:0; font-size:1rem; background-color:var(--bg-clr); display:flex; flex-direction:column; justify-content:space-evenly; align-items:center; 
+}
+.site-header{
+    height:10%; width:100%; position:absolute; top:0; left:0; display:flex; justify-content:space-evenly; align-items:center; padding:5px; box-sizing:border-box; background-color:var(--prm-clr);border-bottom-left-radius:1rem; border-bottom-right-radius:1rem;
+}
+.site-header>h2{
+    max-width: 25ch; text-align:center; color:var(--acc-clr)
+}
+#mobMenu{
+    border:0; border-radius:3px; color:var(--acc-clr); font-weight:bold; font-size:1.2rem; background-color:transparent;
+}
+#mobNavbar{
+    height:60vh; width:60%; border-radius:5px; display:flex; flex-direction:column; justify-content:space-evenly; align-items:center; position:fixed; top:3vh; right:0; background-color:rgba(103, 13, 47, 0.9); transform:translateX(100%); transition:transform 0.5s ease-in-out; z-index:1000;
+}
+#mobNavbar>a[href]{
+    color:var(--acc-clr); text-decoration:none; font-weight:bold;
+}
+.site-navbar{
+    display:none!important;
+}
+.site-footer{
+    margin-top:5vh; height:30vh; width:100%; display:flex; flex-direction:column; justify-content:space-evenly; align-items:center; /*outline:auto;*/ background-color:var(--prm-clr); border-top-left-radius:1rem; border-top-right-radius:1rem;
+}
+.site-footer>address, .site-footer>section{
+    margin:0; text-align:center; color:var(--acc-clr);
+}
+.site-footer>p, .site-footer>p>a[href]{
+    margin:0; text-align:center; color:var(--acc-clr);
+}
+.site-footer>p>span{
+    font-weight:bold;
+}
+/* width:768px, for tablets*/
+@media (min-width:768px){
+    .site-header{
+        border-radius:0;
+    }
+    .site-header>h2{
+        max-width:none;
+    }
+    .site-footer{
+        flex-direction:row; border-radius:0; height:25vh;
+    }
+}
+@media (min-width:1024px){
+    #mobMenu, #mobNavbar{
+        display:none!important;
+    }
+}

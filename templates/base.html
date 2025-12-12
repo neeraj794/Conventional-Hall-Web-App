@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/model.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css')}}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <header class="site-header">
+        <h2>JNANA BHARATHI SAMUDAYA BHAVANA</h2>
+        <button type="button" id="mobMenu">&#9776;</button>
+    </header>
+    
+   <nav class="site-navbar">
+        <a href="{{ url_for('homePage') }}">Home</a>
+        <a href="{{ url_for('servicePage') }}">Services</a>
+        <a href="{{ url_for('contactPage') }}">Contact</a>
+        <a href="{{ url_for('galleryPage') }}">Gallery</a>
+    </nav>
+
+    <aside id="mobNavbar">
+        <button type="button" id="mobNavbarCloseBtn">&#10006;</button>
+        <a href="{{ url_for('homePage') }}">Home</a>
+        <a href="{{ url_for('servicePage') }}">Services</a>
+        <a href="{{ url_for('contactPage') }}">Contact</a>
+        <a href="{{ url_for('galleryPage') }}">Gallery</a>
+    </aside>
+
+    {% block main1 %}{% endblock %}
+    {% block main2 %}{% endblock %}
+    {% block main3 %}{% endblock %}
+
+    <footer class="site-footer">
+        <address>
+            Bangalore University road,<br>
+            near Bangalore University,<br>
+            Jnana Bharathi,<br>
+            Bengaluru,<br>
+            Karnataka - 560056
+        </address>
+        <section>
+            &copy; Jnana Bharathi, All Rights Reserved!
+        </section>
+        <p>
+            <span>Contact Developers-</span><br>
+            Monishraj | Neeraj<br>
+            <a href="">email</a>
+        </p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/functions.js')}}"></script>
+</body>
+</html>

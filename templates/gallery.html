@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+    {% block title %}Gallery{% endblock %}
+    {% block main1 %}
+        <article class="building-pics">
+            <img src="{{ url_for('static', filename='images/image-15.jpg')}}" alt="" class="image-box" id="image15">
+            <img src="{{ url_for('static', filename='images/image-14.jpg')}}" alt="" class="image-box">
+        </article>
+        <article class="hall-pics">
+            <img src="{{ url_for('static', filename='images/image-7.jpg')}}" alt="" class="image-box">
+            <img src="{{ url_for('static', filename='images/image-12.jpg')}}" alt="" class="image-box">
+            <img src="{{ url_for('static', filename='images/image-11.jpg')}}" alt="" class="image-box">
+        </article>
+        <article class="dining-pics">
+            <img src="{{ url_for('static', filename='images/image-9.jpeg')}}" alt="" class="image-box">
+            <img src="{{ url_for('static', filename='images/image-10.jpeg')}}" alt="" class="image-box">
+            <img src="{{ url_for('static', filename='images/image-17.jpeg')}}" alt="" class="image-box">
+        </article>
+        <article class="decoration-pics">
+            <img src="{{ url_for('static', filename='images/image-1.jpg')}}" alt="" class="image-box">
+            <img src="{{ url_for('static', filename='images/image-5.jpeg')}}" alt="" class="image-box">
+        </article>
+    {% endblock %}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+    {% block title%}Home{% endblock %}
+    {% block main1 %}
+        <article class="hero-section">
+            <img src="{{ url_for('static', filename='images/image-15.jpg')}}" alt="">
+        </article>
+        <article class="about-section base-model">
+            <img src="{{ url_for('static', filename='images/image-14.jpg')}}" alt="">
+            <section>
+                <p><strong>About Us</strong></p>
+                <p>&nbsp;&nbsp; Jnana Bharathi Samudaya Bhavana is a well-equipped convention hall established in 2018, located within the serene campus of Bangalore University. The Samudaya Bhavana provides an ideal venue for marriages, naming ceremonies, and other family celebrations.</p>
+                <p>&nbsp;&nbsp; We are proud to have joyously hosted over 70+ weddings and counting, during the year 2024-25. Each celebration was marked by heartfelt care and attention to detail, leaving families deeply satisfied.</p>
+            </section>
+        </article>
+    {% endblock %}
+    {% block main2 %}
+        <article class="service-section base-model">
+            <figure>
+                <img src="{{ url_for('static', filename='images/stage.png')}}" alt="">
+                <figcaption>Hall 1500 floating</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='images/cctv.png')}}" alt="">
+                <figcaption>24/7 CCTV Surveillance</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='images/low_price.png')}}" alt="">
+                <figcaption>Affordable Luxury</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='images/parking.png')}}" alt="">
+                <figcaption>Parking Available</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='images/power.png')}}" alt="">
+                <figcaption>24/7 Power & Electricty</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='images/location.png')}}" alt="">
+                <figcaption>Central Location</figcaption>
+            </figure>
+        </article>
+    {% endblock %}
+    {% block main3 %}
+        <article class="action-section">
+            <div>
+                <h3>Dream Wedding</h3>
+                <h3>Perfectly Realized</h3>
+            </div>
+            <p>Celebrate your first step with us. Exquisite venue, impeccable service, unforgatable memories.</p>
+            <button type="button">Book Your Dream Wedding</button>
+        </article>
+    {% endblock %}
